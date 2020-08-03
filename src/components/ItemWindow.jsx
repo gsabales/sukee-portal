@@ -21,7 +21,6 @@ class ItemWindow extends Component{
   }
 
   render() {
-    console.log(this.state.items);
     return (
       <div className="row">
         {
@@ -29,11 +28,9 @@ class ItemWindow extends Component{
             item =>
               <div className="col-lg-4 col-md-6 mb-4" key={item.id}>
                 <div className="card h-100">
-                  <a href="#"><img className="card-img-top item-display-img" src={item.image} alt=""/></a>
+                  <img className="card-img-top item-display-img" src={item.image} alt=""/>
                   <div className="card-body">
-                    <h4 className="card-title">
-                      <a href="#">{item.name}</a>
-                    </h4>
+                    <h4 className="card-title">{item.name}</h4>
                     <h5>₱{item.price}</h5>
                     <p className="card-text">{item.description}</p>
                   </div>
