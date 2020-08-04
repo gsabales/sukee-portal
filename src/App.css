@@ -1,7 +1,7 @@
 
 html, body {height: 100%}
 
-.app {
+.app, .cart-container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -9,6 +9,7 @@ html, body {height: 100%}
 
 .page-content {
   flex: 1;
+  margin-top: 30px;
 }
 
 .home {
@@ -34,4 +35,28 @@ html, body {height: 100%}
 /*Item Window*/
 .item-display-img {
   height: 159.97px;
+}
+
+/*User Cart*/
+.cart-content {
+  flex: 1;
+  background: #ececec;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.card-col {
+  background: #ffffff;
+}
+
+
+.cart-item {
+  padding: 15px;
+  border-radius: 7px !important;
+}
+
+.cart-item-img {
+  width: 220px;
+  height: 100%;
 }
